@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nanodegree.sameejos.projectpopularmovies.MovieGridActivity">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/spinnerLayout"
+        android:minHeight="?android:attr/listPreferredItemHeight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sort_by"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/sortLabel" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sortSpinner"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/sortLabel">
+
+        </Spinner>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/separator"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/spinnerLayout"
+        android:id="@+id/separator">
+
+    </View>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/separator">
+
+    </FrameLayout>
+</RelativeLayout>
